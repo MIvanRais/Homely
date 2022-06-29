@@ -41,6 +41,11 @@ ul{
 li{
     display: inline-block;
 }
+hr{
+    border: none;
+    border-bottom: 1px solid hsla(216, 12%, 84%, 1);;
+    /* color: hsla(216, 12%, 84%, 1); */
+}
 .short-copy{
     font-size: 0.625rem;
 }
@@ -189,3 +194,126 @@ label[for=check1]{
 .row .card-features:last-child{
     margin-right: 0;
 }
+
+/* ----- Latest Properties ----- */
+.latest-properties{
+    background-color: hsla(0, 0%, 96%, 1);
+}
+.row-1{
+    width: 870px;
+    display: flex;
+    align-items: center;
+    margin-left: 69px;
+    margin-bottom: 63px;
+}
+.row-1>*{
+    margin-right: 17px;
+}
+.row-1>h2{
+    flex: 256px;
+}
+.row-1>p{
+    flex: 473px;
+    color: hsla(0, 0%, 35%, 1);
+    border-left: 1px solid hsla(216, 12%, 84%, 1);
+    padding-left: 17px;
+    margin-right: 0;
+}
+.row-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-latest-properties{
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.content{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 220px;
+}
+.content>h3{
+    margin-bottom: 11px;
+}
+.content>p{
+    margin-bottom: 10px;
+}
+.content>hr{
+    margin-bottom: 9px;
+}
+.facilities{
+    display: flex;
+    position: relative;
+    padding-bottom: 6.5px;
+    align-items: center;
+    height: 30px;
+}
+.facilities>img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.bedroom, .bathroom, .living-area{
+    padding-top: 5px;
+}
+.bedroom{
+    position: absolute;
+    bottom: 0;
+}
+.bathroom{
+    position: absolute;
+    bottom: 0;
+    left: calc(39px + 33.2812px);
+}
+.living-area{
+    position: absolute;
+    bottom: 0;
+    left: calc(72.2812px + 76px);
+}
+.unit{
+    font-weight: bold;
+    margin-right: 39px;
+}
+.card-1{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.5), hsla(218, 58%, 4%, 0.5)), url(../img/house-001.jpg);
+}
+.card-1:hover,
+.card-1:active{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.2), hsla(218, 58%, 4%, 0.2)), url(../img/house-001.jpg);
+    box-shadow: 5px 8px 4px 0px hsla(0, 0%, 0%, 0.25);
+}
+.card-2{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.5), hsla(218, 58%, 4%, 0.5)), url(../img/house-002.jpg);
+}
+.card-2:hover,
+.card-2:active{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.2), hsla(218, 58%, 4%, 0.2)), url(../img/house-002.jpg);
+    box-shadow: 5px 8px 4px 0px hsla(0, 0%, 0%, 0.25);
+}
+.card-3{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.5), hsla(218, 58%, 4%, 0.5)), url(../img/house-003.jpg);
+}
+.card-3:hover,
+.card-3:active{
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.2), hsla(218, 58%, 4%, 0.2)), url(../img/house-003.jpg);
+    box-shadow: 5px 8px 4px 0px hsla(0, 0%, 0%, 0.25);
+}
+.card-1, .card-2, .card-3{
+    /* height: 412px; */
+    height: 360px;
+    width: 325px;
+}
+.card-1:hover h3,
+.card-1:active h3,
+.card-2:hover h3,
+.card-2:active h3,
+.card-3:hover h3,
+.card-3:active h3{
+    color: hsla(160, 100%, 36%, 1);
+}
+/* hsla(218, 58%, 4%, 0.2) */
