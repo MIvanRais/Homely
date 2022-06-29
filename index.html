@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
+ 
 <body>
-    
+    <header>
+        <nav>
+            <h2 class="branding">Homely</h2>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Seller</a></li>
+                    <li><a href="#">Valuation</a></li>
+                    <li><a class="last-child" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Sell or rent your home at the best price</h1>
+            <div class="main-search">
+                <select id="cars">
+                    <option value="" disabled selected>Property Type</option>
+                    <option value="volvo">House</option>
+                    <option value="saab">Appartement</option>
+                    <option value="mercedes">Villa</option>
+                </select>
+                <img src="resources/icon/search.png" alt="Search Icon">
+                <input type="text" name="" id="" placeholder="Search by location or property id" autocomplete="no"
+                    required>
+                <button class="btn">Search</button>
+            </div>
+            <div class="main-filter">
+                <input type="checkbox" name="" id="check1">
+                <label for="check1">Only properties in exclusive representation</label>
+                <input type="checkbox" name="" id="check2">
+                <label for="check2">Only new developments</label>
+            </div>
+        </div>
+    </header>
+    <section class="features">
+        <div class="row">
+            <div class="card-features">
+                <img src="resources/icon/property.png" alt="Property Icon">
+                <h3>Properties</h3>
+                <p>proprietary technology, latest market data and strong real estate expertise allow us to reach potential buyers and present them with a well-priced</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/buyer.png" alt="Buyer Icon">
+                <h3>Buyers</h3>
+                <p>We work with many independent local property experts who know their market perfectly. We will put you in touch with my best.</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/sale.png" alt="Sale Icon">
+                <h3>Sellers</h3>
+                <p>We give our partners the best tools and data to market your property to potential buyers. This means less waiting time for you.</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/valuation.png" alt="Valuation Icon">
+                <h3>Valuation</h3>
+                <p>Estimating the valueof your home online is the first step towards finding the optimal sale price.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
