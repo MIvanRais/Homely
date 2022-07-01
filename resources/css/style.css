@@ -93,6 +93,11 @@ button:active {
     box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.2);
 }
 
+/* ----- Navigation ----- */
+nav{
+    position: relative;
+}
+
 .branding{
     color: hsla(36, 81%, 81%, 1);
     font-size: 2.5rem;
@@ -101,6 +106,16 @@ button:active {
 }
 
 /* ----- Main Navigation ----- */
+.light::after{
+    content: " ";
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: -110px;
+    left: -100px;
+    box-shadow: 216px 149px 250px 224px hsla(0, 0%, 100%, 0.25);
+}
 .main-nav{
     display: flex;
     padding-right: 510px;
