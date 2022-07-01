@@ -1,12 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <h2 class="branding light">Homely</h2>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Seller</a></li>
+                    <li><a href="#">Valuation</a></li>
+                    <li><a class="last-child" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Sell or rent your home at the best price</h1>
+            <div class="main-search">
+                <select id="cars">
+                    <option value="" disabled selected>Property Type</option>
+                    <option value="volvo">House</option>
+                    <option value="saab">Appartement</option>
+                    <option value="mercedes">Villa</option>
+                </select>
+                <img src="resources/icon/search.png" alt="Search Icon">
+                <input type="text" name="" id="" placeholder="Search by location or property id" autocomplete="no"
+                    required>
+                <button class="btn">Search</button>
+            </div>
+            <div class="main-filter">
+                <input type="checkbox" name="" id="check1">
+                <label for="check1">Only properties in exclusive representation</label>
+                <input type="checkbox" name="" id="check2">
+                <label for="check2">Only new developments</label>
+            </div>
+        </div>
+    </header>
+    <section class="features">
+        <div class="row">
+            <div class="card-features">
+                <img src="resources/icon/property.png" alt="Property Icon">
+                <h3>Properties</h3>
+                <p>proprietary technology, latest market data and strong real estate expertise allow us to reach
+                    potential buyers and present them with a well-priced</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/buyer.png" alt="Buyer Icon">
+                <h3>Buyers</h3>
+                <p>We work with many independent local property experts who know their market perfectly. We will put you
+                    in touch with my best.</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/sale.png" alt="Sale Icon">
+                <h3>Sellers</h3>
+                <p>We give our partners the best tools and data to market your property to potential buyers. This means
+                    less waiting time for you.</p>
+            </div>
+            <div class="card-features">
+                <img src="resources/icon/valuation.png" alt="Valuation Icon">
+                <h3>Valuation</h3>
+                <p>Estimating the valueof your home online is the first step towards finding the optimal sale price.</p>
+            </div>
+        </div>
+    </section>
+    <section class="latest-properties">
+        <div class="row-1">
+            <img src="resources/icon/latest-property.png" alt="Latest Property">
+            <h2>Latest Property For Sale</h2>
+            <p>proprietary technology, latest market data and strong real estate expertise allow us to reach potential
+                buyers and present them with a well-priced</p>
+        </div>
+        <div class="row-2">
+            <div class="card-latest-properties card-1">
+                <div class="content">
+                    <h3>24,000 USD</h3>
+                    <p>31, Gedawang Permai St, Semarang</p>
+                    <hr>
+                    <div class="facilities">
+                        <img src="resources/icon/bedroom.png" alt="Bedroom Icon">
+                        <p class="unit">3</p>
+                        <p class="short-copy bedroom">Bedrooms</p>
+                        <img src="resources/icon/bathroom.png" alt="Bathroom Icon">
+                        <p class="unit">4</p>
+                        <p class="short-copy bathroom">Bathrooms</p>
+                        <img src="resources/icon/living-area.png" alt="Living Area Icon">
+                        <p class="unit">460m<sup>2</sup></p>
+                        <p class="short-copy living-area">Living Area</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-latest-properties card-2">
+                <div class="content">
+                    <h3>24,000 USD</h3>
+                    <p>12, Buri Lapangan Bumirejo, Semarang</p>
+                    <hr>
+                    <div class="facilities">
+                        <img src="resources/icon/bedroom.png" alt="Bedroom Icon">
+                        <p class="unit">3</p>
+                        <p class="short-copy bedroom">Bedrooms</p>
+                        <img src="resources/icon/bathroom.png" alt="Bathroom Icon">
+                        <p class="unit">4</p>
+                        <p class="short-copy bathroom">Bathrooms</p>
+                        <img src="resources/icon/living-area.png" alt="Living Area Icon">
+                        <p class="unit">460m<sup>2</sup></p>
+                        <p class="short-copy living-area">Living Area</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-latest-properties card-3">
+                <div class="content">
+                    <h3>32,000 USD / MONTH</h3>
+                    <p>5, Tusam Mbelok Kiri, Semarang</p>
+                    <hr>
+                    <div class="facilities">
+                        <img src="resources/icon/bedroom.png" alt="Bedroom Icon">
+                        <p class="unit">6</p>
+                        <p class="short-copy bedroom">Bedrooms</p>
+                        <img src="resources/icon/bathroom.png" alt="Bathroom Icon">
+                        <p class="unit">5</p>
+                        <p class="short-copy bathroom">Bathrooms</p>
+                        <img src="resources/icon/living-area.png" alt="Living Area Icon">
+                        <p class="unit">2000m<sup>2</sup></p>
+                        <p class="short-copy living-area">Living Area</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <hr>
+        <div class="row">
+            <div class="card-testimoni">
+                <img src="resources/img/florent-laurance.png" alt="Florent Laurance's Photo">
+                <h3>Florent Laurance</h3>
+                <p>a very good website, featuring many choices and also has an impressive house quality, I get many
+                    benefits on this website, great job and keep it up.</p>
+            </div>
+            <div class="card-testimoni">
+                <img src="resources/img/siti-khodijah.png" alt="Siti Khodijah's Photo">
+                <h3>Siti Khodijah</h3>
+                <p>¡Gracias! antes tenía una casa mala, pero después de usar este sitio web, mi casa es grande y bonita.
+                </p>
+            </div>
+            <div class="card-testimoni">
+                <img src="resources/img/joko-widodo.png" alt="Joko Widodo's Photo">
+                <h3>Joko Widodo</h3>
+                <p>Al abrir este sitio web, me resulta más fácil encontrar la casa que quiero, con imágenes claras y un
+                    sitio web adecuado, esto realmente me ayuda a elegir la casa correcta, tengo la casa que quiero,
+                    ¡gracias!</p>
+            </div>
+            <div class="card-testimoni">
+                <img src="resources/img/udin-uhuy.png" alt="Udin Uhuy's Photo">
+                <h3>Udin Uhuy</h3>
+                <p>By opening this website it makes it easier for me to find the house that I want, with clear pictures
+                    and an adequate website, this really helps me in choosing the right house, I have got the house that
+                    I want, thank you!</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimoni-client">
+        <div class="col-1">
+            <h2>Here is what our clients are saying about us</h2>
+            <div class="truspilot-group">
+                <img src="resources/icon/star.png" alt="Star Icon">
+                <img src="resources/icon/star.png" alt="Star Icon">
+                <img src="resources/icon/star.png" alt="Star Icon">
+                <img src="resources/icon/star.png" alt="Star Icon">
+                <img src="resources/icon/classic-star.png" alt="Classic Star Icon">
+                <h3>Trust Pilot</h3>
+            </div>
+            <p>great way to make the first market value estimate and then to select an experienced broker active in
+                the
+                local area for a more in-depth study (without any commitment). Professional and personalised advice,
+                while avoiding going through the big brokers who charge fees that are much too hight</p>
+            <div class="owner-group">
+                <img src="resources/img/chantika.png" alt="Chantika's Photo">
+                <div class="owner-name">
+                    <p>Chantika</p>
+                    <p>Founder of Blank Company</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="image-group">
+                <img src="resources/img/house-006.jpg" alt="House 006">
+                <img src="resources/img/house-007.png" alt="House 007">
+            </div>
+            <img src="resources/img/house-008.png" alt="House 008">
+        </div>
+    </section>
+    <footer>
+        <div class="col-1">
+            <div class="desc">
+                <h2 class="branding branding-footer">Homely</h2>
+                <p>The team at <span>Homely</span> real estate are more than real estate agents looking for real estate
+                    listings. We are a dedicated team of truly passionate, property professionals who understand our
+                    clients' needs and wants.</p>
+            </div>
+            <p class="short-copy">© 2022 Mamikos.com, All rights reserved</p>
+        </div>
+        <div class="col-2">
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>3755 Commercial St Se Salem, Corner with Sunny Boulevard, 3755 Commercial OR 97302
+                    Phone: (305) 555-4444
+                    Fax: (305) 555-4444
+                    Email: homely@gmail.com</p>
+            </div>
+            <div class="socialmedia-group">
+                <img src="resources/icon/youtube.png" alt="Youtube Icon">
+                <img src="resources/icon/instagram.png" alt="instagram Icon">
+                <img src="resources/icon/twitter.png" alt="Twitter Icon">
+            </div>
+        </div>
+        <div class="col-3">
+            <h2>Latest Listings</h2>
+            <div class="image-list">
+                <div class="list list-1">
+                    <img src="resources/img/house-001.jpg" alt="House 001">
+                    <div class="desc-001">
+                        <p>3 Bedrooms</p>
+                        <p>24,000 USD</p>
+                    </div>
+                </div>
+                <div class="list list-2">
+                    <img src="resources/img/house-002.jpg" alt="House 002">
+                    <div class="desc-002">
+                        <p>3 Bedrooms</p>
+                        <p>24,000 USD</p>
+                    </div>
+                </div>
+                <div class="list list-3">
+                    <img src="resources/img/house-003.jpg" alt="House 003">
+                    <div class="desc-003">
+                        <p>6 Bedrooms</p>
+                        <p>32,000 USD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
