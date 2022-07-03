@@ -16,7 +16,7 @@ nav, section{
     margin: auto;
 }
 section{
-    padding: 70px 0 190px 0;
+    padding: 70px 0 70px 0;
 }
 p{
     font-size: 0.9375rem;
@@ -36,6 +36,17 @@ h2{
 }
 h3{
     font-size: 1.5625rem;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+button:hover,
+button:active{
+    color: hsla(160, 100%, 36%, 1);
 }
 
 /* ----- Header ----- */
@@ -80,4 +91,95 @@ nav{
 .group-nav>p:last-child{
     color: hsla(36, 81%, 81%, 1);
     font-weight: 500;
+}
+
+/* ----- Property Detail ----- */
+.property-detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 703px;  
+}
+.col-1{
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 703px;
+}
+.col-1>p{
+    width: 576px;
+}
+.owner-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+}
+.owner>p{
+    margin-bottom: 5px;
+}
+.rating>img{
+    margin-right: 8px;
+}
+.rating>img:last-child{
+    margin-right: 0;
+}
+.col-2{
+    margin-right: 112px;
+}
+.col-2>img{
+    width: 500px;
+    height: 370px;
+    border-radius: 5px;
+}
+.facilities{
+    display: flex;
+}
+.facilities img{
+    width: 15px;
+    height: 15px;
+}
+.unit{
+    font-weight: bold;
+}
+.facilities{
+    display: flex;
+    position: relative;
+    padding-bottom: 6.5px;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.facilities>img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.bedroom, .bathroom, .living-area{
+    padding-top: 5px;
+}
+.bedroom{
+    position: absolute;
+    bottom: 0;
+}
+.bathroom{
+    position: absolute;
+    bottom: 0;
+    left: calc(39px + 33.2812px);
+}
+.living-area{
+    position: absolute;
+    bottom: 0;
+    left: calc(72.2812px + 76px);
+}
+.unit{
+    font-weight: bold;
+    margin-right: 39px;
+}
+.col-2>p{
+    margin-bottom: 10px;
+}
+.col-2>hr{
+    margin-bottom: 20px;
 }
