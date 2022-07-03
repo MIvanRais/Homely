@@ -153,7 +153,7 @@ nav{
 .main-search > *{
     margin-right: 10px;
 }
-select[id=cars]{
+select[id="property-type"]{
     flex: 1 1 10px;
     border: none;
 }
