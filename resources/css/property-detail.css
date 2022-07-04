@@ -1,0 +1,185 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+nav, section{
+    width: 1440px;
+    margin: auto;
+}
+section{
+    padding: 70px 0 70px 0;
+}
+p{
+    font-size: 0.9375rem;
+}
+.short-copy{
+    font-size: 0.625rem;
+}
+
+/* ----- HEADINGS ----- */
+h1{
+    font-size: 5rem;
+    width: 647px;
+    margin-bottom: 119px;
+}
+h2{
+    font-size: 1.875rem;
+}
+h3{
+    font-size: 1.5625rem;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+button:hover,
+button:active{
+    color: hsla(160, 100%, 36%, 1);
+}
+
+/* ----- Header ----- */
+header{
+    background-color: hsla(0, 0%, 97%, 1);
+}
+
+/* ----- LINKS ----- */
+a:link,
+a:visited{
+    color: hsla(218, 58%, 4%, 0.5);
+    font-size: 0.9375rem;
+    text-decoration: none;
+}
+a:hover,
+a:active{
+    color: hsla(218, 58%, 4%, 1);
+}
+
+/* ----- HEADER ----- */
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.group-nav{
+    display: flex;
+    align-items: center;
+    padding: 21px 0;
+}
+.group-nav>p:first-child{
+    color: hsla(218, 58%, 4%, 0.5);
+}
+.group-nav>p:first-child::after{
+    content: "/";
+    margin: 0 5px;
+    color: hsla(216, 12%, 84%, 1);
+}
+.group-nav>p:first-child:hover,
+.group-nav>p:first-child:active{
+    color: hsla(218, 58%, 4%, 1);
+}
+.group-nav>p:last-child{
+    color: hsla(36, 81%, 81%, 1);
+    font-weight: 500;
+}
+
+/* ----- Property Detail ----- */
+.property-detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 703px;  
+}
+.col-1{
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 703px;
+}
+.col-1>p{
+    width: 576px;
+}
+.owner-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+}
+.owner>p{
+    margin-bottom: 5px;
+}
+.rating>img{
+    margin-right: 8px;
+}
+.rating>img:last-child{
+    margin-right: 0;
+}
+.col-2{
+    margin-right: 112px;
+}
+.col-2>img{
+    width: 500px;
+    height: 370px;
+    border-radius: 5px;
+}
+.facilities{
+    display: flex;
+}
+.facilities img{
+    width: 15px;
+    height: 15px;
+}
+.unit{
+    font-weight: bold;
+}
+.facilities{
+    display: flex;
+    position: relative;
+    padding-bottom: 6.5px;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.facilities>img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.bedroom, .bathroom, .living-area{
+    padding-top: 5px;
+}
+.bedroom{
+    position: absolute;
+    bottom: 0;
+}
+.bathroom{
+    position: absolute;
+    bottom: 0;
+    left: calc(39px + 33.2812px);
+}
+.living-area{
+    position: absolute;
+    bottom: 0;
+    left: calc(72.2812px + 76px);
+}
+.unit{
+    font-weight: bold;
+    margin-right: 39px;
+}
+.col-2>p{
+    margin-bottom: 10px;
+}
+.col-2>hr{
+    margin-bottom: 20px;
+}
