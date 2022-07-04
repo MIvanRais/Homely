@@ -11,7 +11,7 @@
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-nav, section{
+nav, section, footer{
     width: 1440px;
     margin: auto;
 }
@@ -23,6 +23,25 @@ p{
 }
 .short-copy{
     font-size: 0.625rem;
+}
+input{
+    padding: 0 20px;
+}
+textarea{
+    padding: 10px 20px;
+}
+button{
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: hsla(36, 81%, 81%, 1);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+button:hover,
+button:active {
+    box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.2);
 }
 
 /* ----- HEADINGS ----- */
@@ -81,3 +100,49 @@ nav{
     color: hsla(36, 81%, 81%, 1);
     font-weight: 500;
 }
+
+/* ----- Contact Form ----- */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    height: 458px;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-bottom: 80px; */
+}
+.group-form,
+button{
+    margin-left: 70px;
+}
+.group-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+.email-group{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+.email-group>p,
+.message-group>p{
+    margin-bottom: 10px;
+}
+.email-group>input{
+    width: 337px;
+    height: 39px;
+    border-radius: 5px;
+    border: 1px solid hsla(36, 81%, 81%, 1);
+}
+.message-group{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+.message-group>textarea{
+    border-radius: 5px;
+    border: 1px solid hsla(36, 81%, 81%, 1);
+    resize: none;
+}
+
