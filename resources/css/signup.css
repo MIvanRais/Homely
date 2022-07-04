@@ -1,0 +1,109 @@
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ----- HEADINGS ----- */
+h1 {
+    font-size: 4.375rem;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+h2 {
+    position: absolute;
+    left: 8.101%;
+    top: 4%;
+    color: hsla(36, 81%, 81%, 1);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* ----- INPUTS ----- */
+input {
+    flex: 100%;
+    margin-bottom: 53px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 0.9375rem;
+    border: 1px solid hsl(31,81%,81%);
+}
+input::placeholder{
+    color: hsl(0, 0%, 0%);
+    font-weight: 500;
+    font-size: 0.9375rem;
+}
+input:hover,
+input:active{
+    background-color: hsl(31,81%,81%);
+    border: 1px solid hsl(31,81%,81%);
+}
+
+/* ----- PARAGRAPH ----- */
+p{
+    font-size: 2rem;
+    color: hsl(0,0%,100%);
+    font-weight: 400;
+}
+
+/* ----- BUTTONS ----- */
+button{
+    padding: 10px 30px;
+    font-size: 1.5625rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(31,81%,81%);
+    border-radius: 5px;
+    border: none;
+}
+button:hover,
+button:active{
+    box-shadow: 2px 2px 4px hsla(0,0%,0%,0.2);
+}
+
+/* ----------------------------------------------- */
+/* CONTAINER */
+/* ----------------------------------------------- */
+.container {
+    width: 1440px;
+    margin: auto;
+    background-image: linear-gradient(hsla(218, 58%, 4%, 0.4), hsla(218, 58%, 4%, 0.4)), url(../css/img/sign.jpg);
+    height: 100vh;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 120% 100%;
+    display: flex;
+}
+
+/* ----- Left Side ----- */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ----- Group Form ----- */
+.group-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.divide {
+    flex: 20%;
+}
+.last-name, .email, .confirm-password{
+    margin-left: 5%;
+}
+
+/* ----- Right Side ----- */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
