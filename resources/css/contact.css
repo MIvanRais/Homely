@@ -146,3 +146,31 @@ button{
     resize: none;
 }
 
+/* ----- FOOTER ----- */
+footer{
+    background-color: hsla(36, 81%, 81%, 1);
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+}
+footer>*{
+    margin: 40px 0 40px 70px;
+}
+.heading{
+    font-size: 4.375rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.address{
+    width: 285px;
+}
+.social-media-group{
+    display: flex;
+    align-items: center;
+}
+.social-media-group>img{
+    margin-right: 20px;
+}
+.social-media-group>img:last-child{
+    margin-right: 0;
+}
