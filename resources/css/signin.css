@@ -43,6 +43,9 @@ input:active {
     background-color: hsl(31, 81%, 81%);
     border: 1px solid hsl(31, 81%, 81%);
 }
+input:focus{
+    outline: 0;
+}
 
 /* ----- BUTTONS ----- */
 button:hover,
