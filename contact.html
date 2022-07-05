@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="resources/css/contact.css">
+    <script defer src="resources/js/script.js"></script>
 </head>
 
 <body>
@@ -24,17 +25,21 @@
         </nav>
     </header>
     <section class="contact-form">
-        <div class="group-form">
-            <div class="email-group">
-                <p><label for="email">Email</label></p>
-                <input type="text" name="" id="email" autocomplete="no">
+        <form id="form">
+            <div class="group-form">
+                <div class="email-group input-control">
+                    <p><label for="email">Email</label></p>
+                    <input type="text" name="" id="email" autocomplete="no">
+                    <div class="error"></div>
+                </div>
+                <div class="message-group input-control">
+                    <p><label for="message">Message</label></p>
+                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    <div class="error"></div>
+                </div>
             </div>
-            <div class="message-group">
-                <p><label for="message">Message</label></p>
-                <textarea name="" id="message" cols="30" rows="10"></textarea>
-            </div>
-        </div>
-        <button>Send</button>
+            <button type="submit">Send</button>
+        </form>
     </section>
     <footer>
         <div class="group">

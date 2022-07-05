@@ -2,7 +2,7 @@
 /* BASIC SETUP */
 /* ----------------------------------------------- */
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -11,26 +11,34 @@
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-nav, section, footer{
+nav,
+section,
+footer {
     width: 1440px;
     margin: auto;
 }
-section{
+
+section {
     padding: 70px 0 70px 0;
 }
-p{
+
+p {
     font-size: 0.9375rem;
 }
-.short-copy{
+
+.short-copy {
     font-size: 0.625rem;
 }
-input{
+
+input {
     padding: 0 20px;
 }
-textarea{
+
+textarea {
     padding: 10px 20px;
 }
-button{
+
+button {
     border: none;
     padding: 10px 50px;
     border-radius: 5px;
@@ -39,70 +47,79 @@ button{
     font-weight: 600;
     font-size: 1.25rem;
 }
+
 button:hover,
 button:active {
     box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.2);
 }
 
 /* ----- HEADINGS ----- */
-h1{
+h1 {
     font-size: 5rem;
     width: 647px;
     margin-bottom: 119px;
 }
-h2{
+
+h2 {
     font-size: 1.875rem;
 }
-h3{
+
+h3 {
     font-size: 1.5625rem;
 }
 
 /* ----- Header ----- */
-header{
+header {
     background-color: hsla(0, 0%, 97%, 1);
 }
 
 /* ----- LINKS ----- */
 a:link,
-a:visited{
+a:visited {
     color: hsla(218, 58%, 4%, 0.5);
     font-size: 0.9375rem;
     text-decoration: none;
 }
+
 a:hover,
-a:active{
+a:active {
     color: hsla(218, 58%, 4%, 1);
 }
 
 /* ----- HEADER ----- */
-nav{
+nav {
     display: flex;
     justify-content: flex-end;
 }
-.group-nav{
+
+.group-nav {
     display: flex;
     align-items: center;
     padding: 21px 0;
 }
-.group-nav>p:first-child{
+
+.group-nav>p:first-child {
     color: hsla(218, 58%, 4%, 0.5);
 }
-.group-nav>p:first-child::after{
+
+.group-nav>p:first-child::after {
     content: "/";
     margin: 0 5px;
     color: hsla(216, 12%, 84%, 1);
 }
+
 .group-nav>p:first-child:hover,
-.group-nav>p:first-child:active{
+.group-nav>p:first-child:active {
     color: hsla(218, 58%, 4%, 1);
 }
-.group-nav>p:last-child{
+
+.group-nav>p:last-child {
     color: hsla(36, 81%, 81%, 1);
     font-weight: 500;
 }
 
 /* ----- Contact Form ----- */
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
     height: 458px;
@@ -110,59 +127,99 @@ nav{
     align-items: flex-start;
     /* margin-bottom: 80px; */
 }
+
 .group-form,
-button{
+button {
     margin-left: 70px;
 }
-.group-form{
+
+.input-control input:focus,
+.input-control textarea:focus {
+    outline: 0;
+}
+
+.error {
+    border-color: #ff3860;
+}
+
+.input-control.success input,
+.input-control.success textarea {
+    border-color: #09c372;
+}
+
+.input-control.error input,
+.input-control.error textarea {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.group-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    height: 320px;
 }
-.email-group{
+
+.email-group {
     display: flex;
     flex-direction: column;
     width: 640px;
 }
+
 .email-group>p,
-.message-group>p{
+.message-group>p {
     margin-bottom: 10px;
 }
-.email-group>input{
+
+.email-group>input {
     width: 337px;
     height: 39px;
     border-radius: 5px;
     border: 1px solid hsla(36, 81%, 81%, 1);
 }
-.message-group{
+
+.message-group {
     display: flex;
     flex-direction: column;
     width: 640px;
 }
-.message-group>textarea{
+
+.message-group>textarea {
     border-radius: 5px;
     border: 1px solid hsla(36, 81%, 81%, 1);
     resize: none;
 }
 
+button {
+    margin-top: 40px;
+}
+
 /* ----- FOOTER ----- */
-footer{
+footer {
     background-color: hsla(218, 58%, 4%, 1);
     display: flex;
     flex-direction: column;
     color: hsl(0, 0%, 100%);
     position: relative;
 }
-footer>*{
+
+footer>* {
     margin: 40px 0 40px 70px;
 }
-.heading{
+
+.heading {
     font-size: 4.375rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.heading::after{
+
+.heading::after {
     content: " ";
     width: 100px;
     height: 100px;
@@ -172,16 +229,20 @@ footer>*{
     left: -92px;
     box-shadow: 216px 149px 224px 136px rgb(255 255 255 / 25%);
 }
-.address{
+
+.address {
     width: 285px;
 }
-.social-media-group{
+
+.social-media-group {
     display: flex;
     align-items: center;
 }
-.social-media-group>a{
+
+.social-media-group>a {
     margin-right: 20px;
 }
-.social-media-group>a:last-child{
+
+.social-media-group>a:last-child {
     margin-right: 0;
 }
