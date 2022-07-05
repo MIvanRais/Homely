@@ -168,9 +168,9 @@ footer>*{
     display: flex;
     align-items: center;
 }
-.social-media-group>img{
+.social-media-group>a{
     margin-right: 20px;
 }
-.social-media-group>img:last-child{
+.social-media-group>a:last-child{
     margin-right: 0;
 }

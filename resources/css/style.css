@@ -72,17 +72,16 @@ p{
 }
 
 /* ----- LINKS ----- */
-a:link,
-a:visited{
+a:link[href="signin.html"],
+a:visited[href="signin.html"]{
     color: hsl(28, 80%, 52%);
-    /* font-size: 1.875rem; */
     font-size: 1.25rem;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 2px solid transparent;
 }
-a:hover,
-a:active{
+a:hover[href="signin.html"],
+a:active[href="signin.html"]{
     border-bottom: 2px solid hsl(28, 80%, 52%);
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -118,7 +117,7 @@ nav{
 }
 .main-nav{
     display: flex;
-    padding-right: 510px;
+    padding-right: 643px;
 }
 .main-nav ul li {
     margin-right: 35px;
@@ -128,6 +127,8 @@ nav{
     color: hsl(0, 0%, 100%);   
     padding-bottom: 1px;
     border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-size: 1.25rem;
 }
 .main-nav a:hover,
 .main-nav a:active{
@@ -241,12 +242,17 @@ label[for=check1]{
     display: flex;
     justify-content: space-evenly;
 }
+.row-2>a:link,
+.row-2>a:visited{
+    text-decoration: none;
+}
 .card-latest-properties{
     background-size: 100% 55%;
     background-repeat: no-repeat;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     padding: 20px 10px;
+    color: hsla(0, 0%, 0%, 1);
 }
 .content{
     height: 50%;
@@ -523,7 +529,7 @@ footer>.col-2 img{
     align-items: center;
     margin-top: 20px;
 }
-.socialmedia-group>img{
+.socialmedia-group>a{
     margin-right: 20px;
 }
 .col-3{
@@ -540,13 +546,13 @@ footer>.col-2 img{
 .list-1, .list-2, .list-3{
     width: max-content;
 }
-.image-list>.list>img{
+a>.list>img{
     width: 115px;
     height: 76.57px;
     border-radius: 2px;
     margin-bottom: 20px;
 }
-.image-list>.list-3>img{
+a>.list-3>img{
     margin-bottom: 0;
 }
 .image-list>.desc>p{
@@ -574,13 +580,18 @@ footer>.col-2 img{
 }
 .image-list .desc-003>p:first-child{
     position: absolute;
-    top: 194px;
+    top: 202px;
     left: 125px;
 }
 .image-list .desc-003>p:last-child{
     position: absolute;
-    top: 223px;
+    top: 232px;
     left: 125px;
+}
+.image-list>a:link,
+.image-list>a:visited{
+    color: hsla(0, 0%, 100%, 1);
+    text-decoration: none;
 }
 .list-1:hover>.desc-001>p:last-child,
 .list-1:active>.desc-001>p:last-child,

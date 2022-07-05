@@ -59,16 +59,16 @@ header{
 }
 
 /* ----- LINKS ----- */
-a:link,
-a:visited{
+nav>ul a:link,
+nav>ul a:visited{
     color: hsl(28, 80%, 52%);
     font-size: 1.25rem;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 2px solid transparent;
 }
-a:hover,
-a:active{
+nav>ul a:hover,
+nav>ul a:active{
     border-bottom: 2px solid hsl(28, 80%, 52%);
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -84,7 +84,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 686px;
+    width: 570px;
 }
 .branding{
     color: hsla(36, 81%, 81%, 1);
@@ -92,20 +92,23 @@ nav{
     font-weight: bold;
     margin-right: 90px; 
 }
+.main-nav>ul>li:first-child{
+    font-size: 1.25rem;
+    color: hsla(36, 81%, 81%, 1);
+    font-weight: 500;
+}
 .main-nav a:link,
 .main-nav a:visited{
     color: hsla(218, 58%, 4%, 1);   
     padding-bottom: 1px;
     border-bottom: 2px solid transparent;
+    font-size: 1.25rem;
+    text-decoration: none;
 }
 .main-nav a:hover,
 .main-nav a:active{
     color: hsla(36, 81%, 81%, 1);
 }
-.main-nav a:active{
-    font-weight: 500;
-}
-
 
 /* ----- Property ----- */
 .property{
@@ -168,6 +171,13 @@ select[id="property-type"]{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.row-1>a:link,
+.row-1>a:visited,
+.row-2>a:link,
+.row-2>a:visited{
+    color: hsla(0, 0%, 0%, 1);
+    text-decoration: none;
 }
 .card-properties{
     background-size: 100% 60%;
@@ -325,7 +335,7 @@ footer>.col-2 img{
     align-items: center;
     margin-top: 20px;
 }
-.socialmedia-group>img{
+.socialmedia-group>a{
     margin-right: 20px;
 }
 .col-3{
@@ -342,13 +352,13 @@ footer>.col-2 img{
 .list-1, .list-2, .list-3{
     width: max-content;
 }
-.image-list>.list>img{
+a>.list>img{
     width: 115px;
     height: 76.57px;
     border-radius: 2px;
     margin-bottom: 20px;
 }
-.image-list>.list-3>img{
+a>.list-3>img{
     margin-bottom: 0;
 }
 .image-list>.desc>p{
@@ -376,13 +386,18 @@ footer>.col-2 img{
 }
 .image-list .desc-003>p:first-child{
     position: absolute;
-    top: 194px;
+    top: 202px;
     left: 125px;
 }
 .image-list .desc-003>p:last-child{
     position: absolute;
-    top: 223px;
+    top: 232px;
     left: 125px;
+}
+.image-list>a:link,
+.image-list>a:visited{
+    color: hsla(0, 0%, 100%, 1);
+    text-decoration: none;
 }
 .list-1:hover>.desc-001>p:last-child,
 .list-1:active>.desc-001>p:last-child,
